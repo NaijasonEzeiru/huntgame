@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import huntgameShow from "../assets/huntgame-show.png";
+import huntgameApp from "../assets/huntgame-app.png";
+import huntgameShowDesktop from "../assets/huntgame-show-desktop.png";
+import huntgameAppDesktop from "../assets/huntgame-app-desktop.png";
+---
+
+<section class="pt-9 lg:pt-24 mb-12">
+  <h3
+    class="text-lg font-medium lg:text-3xl lg:font-semibold mb-3 lg:mb-12 text-center"
+  >
+    Our community
+  </h3>
+  <div class="flex flex-col md:flex-row gap-12">
+    <div class="">
+      <Image src={huntgameShow} alt="" class="w-full md:hidden" />
+      <Image src={huntgameShowDesktop} alt="" class="w-full hidden md:block" />
+      <h4 class="text-lg lg:text-2xl font-semibold mb-1 mt-2 lg:mt-14 lg:mb-3">
+        Huntgame show
+      </h4>
+      <p class="text-sm lg:text-lg">
+        Huntgameshow is a unique reality show where participants embark on a
+        thrilling journey to find love. Contestants are put through a series of
+        challenges and activities designed to test their compatibility,
+        teamwork, and ability to connect with potential partners. Each episode
+        offers exciting twists and turns, making the search for love both
+        challenging and entertaining. The show's dynamic format keeps viewers
+        engaged as they root for their favorite contestants, all while exploring
+        the complexities of romance in a fun and adventurous setting.
+      </p>
+    </div>
+    <div class="">
+      <Image src={huntgameApp} alt="" class="w-full md:hidden" />
+      <Image src={huntgameAppDesktop} alt="" class="w-full hidden md:block" />
+      <h4 class="text-lg lg:text-2xl font-semibold mb-1 mt-2 lg:mt-14 lg:mb-3">
+        Huntgame app
+      </h4>
+      <p class="text-sm lg:text-lg">
+        Huntgameshow is a unique reality show where participants embark on a
+        thrilling journey to find love. Contestants are put through a series of
+        challenges and activities designed to test their compatibility,
+        teamwork, and ability to connect with potential partners. Each episode
+        offers exciting twists and turns, making the search for love both
+        challenging and entertaining. The show's dynamic format keeps viewers
+        engaged as they root for their favorite contestants, all while exploring
+        the complexities of romance in a fun and adventurous setting.
+      </p>
+    </div>
+  </div>
+</section>

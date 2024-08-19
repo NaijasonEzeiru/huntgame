@@ -1,0 +1,57 @@
+---
+import Community from "../components/Community.astro";
+import { Image } from "astro:assets";
+
+import Footer from "../components/IndexFooter.astro";
+import playStore from "../assets/play-store.png";
+import appStore from "../assets/app-store.png";
+import youtube from "../assets/youtube.png";
+import facebook from "../assets/facebook.png";
+import joinCommunity from "../assets/join-community.png";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Huntgame" content="Huntgame">
+  <main class="text-white overflow-hidden">
+    <Hero />
+    <div
+      class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-44 xl:px-56"
+    >
+      <Community />
+      <section
+        class="text-black bg-[#ffeeee4d] rounded-[1.225rem] mt-3 sm:mt-20 lg:mt-52 grid grid-cols-2 items-center lg:gap-12 lg:rounded-[30px] pt-4 pl-8 lg:pt-9 lg:pl-14"
+      >
+        <div class="pb-[18px]">
+          <h3
+            class="slackey whitespace-nowrap mb-4 sm:text-xl md:text-3xl lg:mb-12 text-[#5D0740]"
+          >
+            Join our community
+          </h3>
+          <p class="slackey sm:text-xl md:text-2xl">Download huntgame app</p>
+          <span
+            class="flex items-center mt-2 mb-6 gap-3 lg:mb-16 lg:mt-9 lg:gap-7"
+          >
+            <Image alt="" src={playStore} class="w-[16.7vw] lg:[14.7vw]" />
+            <Image alt="" src={appStore} class="w-[16.7vw] lg:[14.7vw]" />
+          </span>
+          <p class="slackey lg:text-2xl">Subscribe to<br /> huntgameshow</p>
+          <div class="flex gap-1 lg:gap-2 mt-1 lg:mt-8 items-center">
+            <Image
+              alt=" "
+              src={youtube}
+              class="w-8 h-6 lg:w-[73px] lg:h-auto"
+            />
+            <span
+              class="lg:w-14 lg:h-9 w-6 h-4 rounded-[10px] lg:bg-[#0866FF] flex justify-center"
+            >
+              <Image alt="" src={facebook} class="h-full" />
+            </span>
+          </div>
+        </div>
+        <Image alt="" src={joinCommunity} class="h-full" />
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,114 @@
+---
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us - Huntgame." content="Contact Us - Huntgame.">
+  <main
+    id="contact-us"
+    class="py-8 px-6 lg:py-40 lg:px-[130px] flex flex-col lg:flex-row-reverse gap-3 text-sm md:text-lg"
+  >
+    <div
+      class="px-8 pt-5 lg:py-20 pb-12 xl:px-[88px] rounded-[20px] flex gap-4 lg:gap-8 flex-col lg:pt-[86px] lg:pb-24 flex-1 bg-[#FEFEFE] shadow"
+    >
+      <h4 class="text-primaryCta mb-2 lg:hidden font-Righteous righteous">
+        Have an inquiry or <br />
+         complaint? contact US
+      </h4>
+      <input
+        type="text"
+        placeholder="Your name"
+        class="w-full rounded-md h-10 md:h-14 lg:h-[88px] border border-solid border-black px-4 bg-transparent"
+      />
+      <input
+        type="email"
+        placeholder="Your email"
+        class="w-full rounded-md h-10 md:h-14 lg:h-[88px] border border-solid border-black px-4 bg-transparent"
+      />
+      <textarea
+        placeholder="Your message"
+        class="w-full rounded-md h-24 md:h-32 lg:h-48 border border-solid border-black px-4 bg-transparent py-7"
+      ></textarea>
+      <button
+        class="w-full rounded-md h-10 md:h-14 lg:h-[88px] bg-primaryBg px-4 text-white text-xs"
+      >
+        Send message
+      </button>
+    </div>
+    <div
+      class="lg:px-16 px-8 pt-5 xl:px-28 lg:py-20 pb-12 rounded-[20px] lg:rounded-r-0 space-y-2 flex-1 flex flex-col justify-between items-stretch bg-[#FEFEFE] shadow"
+    >
+      <h4
+        class="mx-[53px] lg:mx-0 text-primaryCta mb-5 hidden lg:block font-Righteous lg:text-[30px] leading-10 righteous"
+      >
+        Have an inquiry or <br />
+         complaint? contact US
+      </h4>
+      <div class="flex flex-col gap-4">
+        <a
+          class="flex min-h-14 md:min-h-20 xl:min-h-28 p-4 gap-4 lg:gap-8 md:px-7 md:py-11 lg:px-9 xl:px-12 bg-[#D9D9D9] rounded-[10px] text-[#686868] items-center"
+          href="mailto:info@huntgameshow.com"
+          ><svg
+            width="42"
+            height="45"
+            viewBox="0 0 42 45"
+            fill="none"
+            class="w-6 md:w-9 xl:w-12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.0013 0.46875L13.1471 5.87708H6.41797V10.4604L2.1888 13.4167C0.980469 14.2188 0.167969 15.6625 0.167969 17.3354V40.2521C0.167969 41.4677 0.606955 42.6334 1.38836 43.493C2.16976 44.3525 3.22957 44.8354 4.33464 44.8354H37.668C39.9805 44.8354 41.8346 42.7958 41.8346 40.2521V17.3354C41.8346 15.6625 41.0221 14.2188 39.8138 13.4167L35.5846 10.4604V5.87708H28.8555M10.5846 10.4604H31.418V21.6438L21.0013 28.7938L10.5846 21.6438M12.668 12.7521V16.1896H29.3346V12.7521M6.41797 15.9146V18.7792L4.33464 17.3354M35.5846 15.9146L37.668 17.3354L35.5846 18.7792M12.668 18.4813V21.9188H29.3346V18.4813H12.668Z"
+              fill="black"></path>
+          </svg>
+          <p>info@huntgameshow.com</p>
+        </a>
+        <a
+          class="flex min-h-14 md:min-h-20 xl:min-h-28 p-4 gap-4 lg:gap-8 md:px-7 md:py-11 lg:px-9 xl:px-12 bg-[#D9D9D9] rounded-[10px] text-[#686868] items-center"
+          href=""
+          ><svg
+            width="43"
+            height="52"
+            viewBox="0 0 43 52"
+            fill="none"
+            class="w-6 md:w-9 xl:w-12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.3235 6.70588V2M30.6765 6.70588V2M21.5 49.0588C12.3075 49.0588 7.71235 49.0588 4.85618 45.9576C2 42.8565 2 37.8635 2 27.8824C2 17.9012 2 12.9082 4.85618 9.80706C7.71235 6.70588 12.3075 6.70588 21.5 6.70588C30.6925 6.70588 35.2876 6.70588 38.1438 9.80706C41 12.9082 41 17.9012 41 27.8824C41 37.8635 41 42.8565 38.1438 45.9576C35.2876 49.0588 30.6925 49.0588 21.5 49.0588Z"
+              stroke="black"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+            <path
+              d="M26.1298 19.6278C26.1298 20.8758 25.6464 22.0728 24.786 22.9553C23.9255 23.8378 22.7585 24.3336 21.5416 24.3336C20.3247 24.3336 19.1577 23.8378 18.2972 22.9553C17.4368 22.0728 16.9534 20.8758 16.9534 19.6278C16.9534 18.3797 17.4368 17.1827 18.2972 16.3002C19.1577 15.4177 20.3247 14.9219 21.5416 14.9219C22.7585 14.9219 23.9255 15.4177 24.786 16.3002C25.6464 17.1827 26.1298 18.3797 26.1298 19.6278ZM12.4684 36.6231C14.8955 32.7878 18.7519 31.3525 21.5416 31.3548C24.3312 31.3572 28.0752 32.7901 30.5024 36.6254C30.6584 36.8725 30.702 37.176 30.5598 37.4348C29.9931 38.4678 28.2289 40.5172 26.958 40.656C25.4944 40.8136 21.6655 40.8372 21.5439 40.8372C21.4223 40.8372 17.4787 40.8136 16.0151 40.656C14.7395 40.5148 12.9776 38.4678 12.4087 37.4325C12.2688 37.176 12.3124 36.8725 12.4684 36.6231Z"
+              stroke="black"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+          <p>+234 916 794 8683</p>
+        </a>
+        <address
+          class="grid grid-flow-col min-h-14 md:min-h-20 xl:min-h-28 p-4 gap-4 lg:gap-8 md:px-7 md:py-11 lg:px-9 xl:px-12 bg-[#D9D9D9] rounded-[10px] text-[#686868] items-center justify-start"
+        >
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            class="w-6 md:w-9 xl:w-12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.5 2V49M49 25.4832H2M45.6429 25.4832C45.642 30.8267 43.52 35.9513 39.7432 39.7313C35.9663 43.5113 30.8435 45.6375 25.5 45.6429C14.3778 45.6429 5.35714 36.5987 5.35714 25.4832C5.35981 20.1431 7.48329 15.0226 11.2606 11.2478C15.0379 7.47295 20.1598 5.35289 25.5 5.35379C30.8399 5.35378 35.9613 7.47413 39.7384 11.2487C43.5155 15.0234 45.6393 20.1433 45.6429 25.4832Z"
+              stroke="black"
+              stroke-width="4"
+              stroke-linecap="square"></path>
+          </svg>
+          <p>42 otunba olufemi ajayi, ogombo, etiosa lagos.</p>
+        </address>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
