@@ -30,3 +30,7 @@
 .slackey {
   font-family: slackey;
 }
+
+.bg-space-repeat {
+  background-repeat: space repeat;
+}
