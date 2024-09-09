@@ -34,3 +34,7 @@
 .bg-space-repeat {
   background-repeat: space repeat;
 }
+
+.gar {
+  grid-auto-rows: 1fr;
+}
