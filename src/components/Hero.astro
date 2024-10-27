@@ -2,40 +2,43 @@
 import { Image } from "astro:assets";
 import playStore from "../assets/play-store.png";
 import appStore from "../assets/app-store.png";
-import hero from "../assets/hero.png";
 ---
 
 <div
-  class="w-full relative text-white inter before:absolute md:min-h-[900px] before:-z-20 md:h-[calc(100vh-7rem)] before:w-full before:h-full before:bg-secondaryBg before:content-['']"
+  class="w-full relative text-white inter before:absolute before:-z-20 before:w-full before:h-full before:bg-[#C06E83] before:content-[''] after:absolute after:z-30 after:w-full after:h-full after:bg-secondaryColor/10 after:content-['']"
 >
-  <Image
+  <!-- <Image
     src={hero}
     alt=""
     class="relative md:min-h-[calc(100vh-7rem)] -z-30 md:mx-auto"
-  />
-  <div class="px-9 lg:px-[186px] absolute h-fit top-0 my-auto bottom-0">
-    <p
-      class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10"
-    >
-      Ignite your passion. Huntgame - where connections spark!
-    </p>
-    <p
-      class="text-sm md:text-xl px-4 lg:text-3xl font-semibold mb-10 text-center"
-    >
-      Find your spark, relationship, dating, hookup, onenight-stand, whatever
-      you seek, one night community is here to provide. download app today, ask
-      for one night.
-    </p>
-    <span class="flex gap-3 justify-center items-center px-4">
-      <a class="max-w-72" href="" target="_blank">
-        <Image src={playStore} alt="link to hunt game app on play store" />
-      </a>
-      <a
-        class="max-w-72"
-        href="https://apps.apple.com/ng/app/huntgame/id6502562121"
-        target="_blank"
-        ><Image src={appStore} alt="link to hunt game app on app store" /></a
+  /> -->
+  <div
+    class="px-14 md:pl-24 md:pr-[186px] pt-4 h-fit top-0 my-auto bottom-0 flex flex-col-reverse md:flex-row mb-0"
+  >
+    <img src="/hero.png" alt="" class="md:w-[45%]" />
+    <div class="md:pt-16">
+      <p
+        class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10 text-stroke-6"
       >
-    </span>
+        Huntgame - where we help two strangers find love.
+      </p>
+      <p
+        class="text-sm md:text-xl px-4 lg:text-3xl font-semibold mb-10 text-center text-stroke-3"
+      >
+        Find your spark, relationship, dating, whatever you seek, Huntgame
+        community is here to provide. download app today. happy hunting!
+      </p>
+      <span class="flex gap-3 justify-center items-center px-4 pb-16">
+        <a class="max-w-72" href="" target="_blank">
+          <Image src={playStore} alt="link to hunt game app on play store" />
+        </a>
+        <a
+          class="max-w-72"
+          href="https://apps.apple.com/ng/app/huntgame/id6502562121"
+          target="_blank"
+          ><Image src={appStore} alt="link to hunt game app on app store" /></a
+        >
+      </span>
+    </div>
   </div>
 </div>

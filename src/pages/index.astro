@@ -5,260 +5,261 @@ import { Image } from "astro:assets";
 import Footer from "../components/IndexFooter.astro";
 import playStore from "../assets/play-store.png";
 import appStore from "../assets/app-store.png";
-// import youtube from "../assets/youtube.png";
-// import facebook from "../assets/facebook.png";
-// import joinCommunity from "../assets/join-community.png";
-// import huntGameApp from "../assets/hunt-game.png";
-// import huntGameAppDesk from "../assets/huntgame-app-desk.png";
-import testimonial1 from "../assets/testimonial-1.jpg";
-import testimonial2 from "../assets/testimonial-2.jpg";
-import testimonial3 from "../assets/testimonial-3.jpg";
-import testimonial4 from "../assets/testimonial-4.jpg";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <Layout title="Huntgame" content="Huntgame">
   <main class="text-white overflow-hidden">
     <Hero />
-    <div
-      class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-44 xl:px-56"
+    <Community />
+    <section
+      class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-20 lg:px-20 xl:px-20"
     >
-      <Community />
-      <!-- <section
-        class="text-black bg-[#ffeeee4d] rounded-[1.225rem] mt-3 sm:mt-20 lg:mt-52 grid grid-cols-2 items-center lg:gap-12 lg:rounded-[30px] pt-4 pl-8 lg:pt-9 lg:pl-14"
+      <h3
+        class="font-extrabold text-center pt-14 pb-[22px] lg:pt-[72px] lg:pb-12 lg:text-xl"
       >
-        <div class="pb-[18px]">
-          <h3
-            class="slackey whitespace-nowrap mb-4 sm:text-xl md:text-3xl lg:mb-12 text-[#5D0740]"
-          >
-            Join our community
-          </h3>
-          <p class="slackey sm:text-xl md:text-2xl">Download huntgame app</p>
-          <span
-            class="flex items-center mt-2 mb-6 gap-3 lg:mb-16 lg:mt-9 lg:gap-7"
-          >
-            <Image alt="" src={playStore} class="w-[16.7vw] lg:[14.7vw]" />
-            <Image alt="" src={appStore} class="w-[16.7vw] lg:[14.7vw]" />
-          </span>
-          <p class="slackey lg:text-2xl">Subscribe to<br /> huntgameshow</p>
-          <div class="flex gap-1 lg:gap-2 mt-1 lg:mt-8 items-center">
-            <Image
-              alt=" "
-              src={youtube}
-              class="w-8 h-6 lg:w-[73px] lg:h-auto"
-            />
-            <span
-              class="lg:w-14 lg:h-9 w-6 h-4 rounded-[10px] lg:bg-[#0866FF] flex justify-center"
-            >
-              <Image alt="" src={facebook} class="h-full" />
-            </span>
-          </div>
-        </div>
-        <Image alt="" src={joinCommunity} class="h-full" />
-      </section> -->
-      <section
-        class="bg-white/95 rounded-[20px] py-14 px-10 lg:py-24 lg:px-16 flex flex-col gap-7 md:flex-row w-full"
+        FEATURED PRODUCTS
+      </h3>
+      <div
+        class="lg:flex flex-col gap-48 lg:flex-row justify-between items-center hidden"
       >
         <div
-          class="bg-white flex-1 py-12 px-8 text-center rounded-[20px] lg:px-16 lg:flex lg:flex-col lg:justify-center xl:px-24 min-w-0 lg:pb-[101px] lg:pt-[90px]"
+          class="relative flex-1 flex flex-col-reverse items-center max-w-80 lg:max-w-none lg:items-stretch"
         >
-          <h5 class="text-xl font-extrabold text-primaryBg mb-2 lg:text-4xl">
-            JOIN HUNTGAME
-          </h5>
-          <p class="text-black mb-14 lg:text-2xl">
-            Join a premium community of users seeking love and companionship.
-          </p>
-          <button
-            class="w-full rounded-[50px] text-white bg-primaryBg h-14 lg:h-20 relative"
-            id="getStarted">Get started</button
-          >
-        </div>
-        <img
-          alt="hunt game app on phone"
-          src="/phonemobile.png"
-          class="mx-auto flex-1 lg:hidden w-full h-auto min-w-0 grow rounded-[20px] scale-125"
-        />
-        <img
-          alt="hunt game app on phone"
-          src="/huntgame-app-desk.png"
-          class="mx-auto flex-1 hidden lg:block w-full h-auto min-w-0 grow rounded-[20px]"
-        />
-        <div
-          class="relative z-10 hidden"
-          aria-labelledby="modal-title"
-          role="dialog"
-          aria-modal="true"
-          id="appDialog"
-        >
-          <!--
-    Background backdrop, show/hide based on modal state.
-
-    Entering: "ease-out duration-300"
-      From: "opacity-0"
-      To: "opacity-100"
-    Leaving: "ease-in duration-200"
-      From: "opacity-100"
-      To: "opacity-0"
-  -->
           <div
-            class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-            aria-hidden="true"
-          >
-          </div>
-
-          <div class="fixed inset-0 z-50 w-screen overflow-y-auto">
-            <div
-              class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
-            >
-              <!--
-        Modal panel, show/hide based on modal state.
-
-        Entering: "ease-out duration-300"
-          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          To: "opacity-100 translate-y-0 sm:scale-100"
-        Leaving: "ease-in duration-200"
-          From: "opacity-100 translate-y-0 sm:scale-100"
-          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-      -->
-              <div
-                class="relative transform flex gap-1 w-[80%] flex-col justify-center items-center pt-10 pb-8 overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
-              >
-                <p class="text-primaryBg text-2xl font-extrabold">
-                  JOIN HUNTGAME
-                </p>
-                <p class="text-black">Download the huntgame app today.</p>
-                <div class="flex gap-4 mx-6 mt-5 lg:mx-9">
-                  <a href="">
-                    <Image
-                      src={playStore}
-                      alt="link to our app on play store"
-                      class="hover:border-2 border-primaryBg rounded"
-                    />
-                  </a>
-                  <a
-                    href="https://apps.apple.com/ng/app/huntgame/id6502562121"
-                    target="_blank"
-                  >
-                    <Image
-                      src={appStore}
-                      alt="link to our app on app store"
-                      class="hover:border-2 border-primaryBg rounded"
-                    />
-                  </a>
-                </div>
-                <button
-                  class="top-1 right-4 text-black absolute text-2xl"
-                  id="closeDialog">X</button
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h3
-          class="font-extrabold text-center mt-14 mb-[22px] lg:mt-[72px] lg:mb-12 lg:text-xl"
-        >
-          FEATURED PRODUCTS
-        </h3>
-        <div class="flex-col gap-7 grid gar justify-center lg:flex-row">
-          <div
-            class="bg-white rounded-[10px] lg:w-full mx-10 lg:mx-0 lg:rounded-[20px] flex flex-col xl:flex-row sm:flex-row lg:flex-col"
+            class="rounded-full w-full lg:w-[275px] h-[275px] border-[10px] aspect-square border-[#B5170C] lg:absolute z-10 top-36 lg:-top-[12%]"
           >
             <img
               alt="happy couples"
               src="match-making.png"
-              class="w-full rounded-tl-[10px] rounded-tr-[10px] lg:rounded-tl-[10px] lg:rounded-tr-[10px] lg:w-full xl:rounded-tl-[20px] xl:rounded-tr-[0px] xl:rounded-bl-[20px] sm:rounded-tl-[20px] sm:rounded-tr-[0px] sm:rounded-bl-[20px] sm:w-48 sm:h-52 xl:w-48 h-52 aspect-[131/106]"
+              class="w-full h-full rounded-full block"
             />
-            <div
-              class="px-4 py-4 md:px-6 sm:flex sm:flex-col sm:justify-center lg:gap-2"
-            >
-              <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
-                Premium match making
-              </h5>
-              <p class="text-black lg:text-xl">
-                Get matched with people of similar qualities and thoughts.
-              </p>
-            </div>
           </div>
           <div
-            class="bg-white rounded-[10px] lg:w-full mx-10 lg:mx-0 lg:rounded-[20px] flex flex-col xl:flex-row sm:flex-row lg:flex-col"
+            class="bg-[#D9D9D9] h-[216px] pl-44 flex justify-center flex-col rounded-lg w-[85%] pr-8 relative left-32"
+          >
+            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+              Premium match making
+            </h5>
+            <p class="text-black lg:text-xl">
+              Get matched with people of similar qualities and thoughts.
+            </p>
+          </div>
+        </div>
+        <div class="relative flex-1 flex flex-col-reverse">
+          <div
+            class="rounded-full w-[275px] h-[275px] border-[10px] border-[#B5170C] lg:absolute z-10 -top-[12%]"
           >
             <img
               alt="happy couples"
               src="all-hands.png"
-              class="w-full rounded-tl-[10px] rounded-tr-[10px] lg:rounded-tl-[10px] lg:rounded-tr-[10px] lg:w-full xl:rounded-tl-[20px] xl:rounded-tr-[0px] xl:rounded-bl-[20px] sm:rounded-tl-[20px] sm:rounded-tr-[0px] sm:rounded-bl-[20px] sm:w-48 sm:h-52 xl:w-48 h-52 aspect-[131/106]"
+              class="w-full h-full rounded-full block"
             />
-            <div
-              class="px-4 py-4 md:px-6 sm:flex sm:flex-col sm:justify-center lg:gap-2"
-            >
-              <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
-                A community of like minds
-              </h5>
-              <p class="text-black lg:text-xl">
-                Join a premium community of users seeking love and
-                companionship.
-              </p>
-            </div>
+          </div>
+          <div
+            class="bg-[#D9D9D9] h-[216px] pl-44 flex justify-center flex-col rounded-lg w-[85%] pr-8 relative left-32"
+          >
+            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+              A community of like minds
+            </h5>
+            <p class="text-black lg:text-xl">
+              Join a premium community of users seeking love and companionship.
+            </p>
           </div>
         </div>
-      </section>
-      <section>
-        <h3
-          class="font-extrabold text-center mt-14 mb-[22px] lg:mt-28 lg:mb-8 lg:text-xl"
+      </div>
+      <div
+        class="flex flex-col gap-48 mb-24 lg:flex-row lg:gap-44 justify-between items-center lg:hidden"
+      >
+        <div
+          class="relative flex-1 flex flex-col-reverse items-center max-w-80"
         >
-          TESTIMONIALS
+          <div
+            class="rounded-full w-full overflow-hidden border-[10px] border-[#B5170C] z-10 aspect-square absolute top-36"
+          >
+            <img
+              alt="happy couples"
+              src="match-making.png"
+              class="w-full h-full rounded-full block"
+            />
+          </div>
+          <div
+            class="bg-[#D9D9D9] flex gap-4 px-5 pt-4 flex-col rounded-2xl w-11/12 h-80"
+          >
+            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+              A community of like minds
+            </h5>
+            <p class="text-black lg:text-xl">
+              Join a premium community of users seeking love and companionship.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative flex-1 flex flex-col-reverse items-center max-w-80"
+        >
+          <div
+            class="rounded-full w-full overflow-hidden border-[10px] border-[#B5170C] z-10 aspect-square absolute top-36"
+          >
+            <img
+              alt="happy couples"
+              src="all-hands.png"
+              class="w-full h-full rounded-full block"
+            />
+          </div>
+          <div
+            class="bg-[#D9D9D9] flex gap-4 px-5 pt-4 flex-col rounded-2xl w-11/12 h-80"
+          >
+            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+              Premium match making
+            </h5>
+            <p class="text-black lg:text-xl">
+              Get matched with people of similar qualities and thoughts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative w-full bg-primaryBg pb-7 lg:pb-40 px-7 sm:px-16 lg:px-20 xl:px-20 pt-12"
+    >
+      <div
+        class="bg-white/5 relative px-14 after:absolute after:z-0 after:w-full after:bg-[#D6792C] after:content-[''] after:h-[45%] after:rounded-b-full after:top-0 after:right-0 lg:after:w-[45%] lg:after:h-full lg:after:rounded-l-full lg:after:rounded-br-none"
+      >
+        <h3
+          class="pb-14 pt-6 lg:py-20 font-semibold text-lg lg:text-3xl lg:mx-8 z-20 relative text-center lg:text-left"
+        >
+          Why choose huntgame?
         </h3>
-        <div class="flex gap-6 overflow-x-auto justify-between">
-          <div class="bg-white rounded-[10px] lg:w-full w-max">
-            <Image
-              alt="happy couples"
-              src={testimonial1}
-              class="rounded-t-[10px] w-56 h-52 lg:w-full lg:h-auto"
-            />
-            <div class="px-5 py-6 w-56 lg:w-full lg:h-36">
-              <p class="text-black">
-                Special thanks to huntgame for this opportunity, it was a
-                genuine connection.
-              </p>
-            </div>
+        <span
+          class="flex flex-col lg:flex-row text-primaryBg gap-5 lg:gap-7 lg:mx-8 font-extrabold pb-3 lg:pb-44 z-20"
+        >
+          <span
+            class="bg-white rounded-full text-center w-full aspect-square z-20"
+          >
+            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+              1. Tailored Matches
+            </h5>
+            <p
+              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+            >
+              Our advanced matching algorithm ensures that you are paired with
+              people who share your interests, values, and goals, making it
+              easier to build lasting connections.
+            </p>
+          </span>
+          <span
+            class="bg-white rounded-full text-center w-full aspect-square z-20"
+          >
+            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+              2. Relationship Focused
+            </h5>
+            <p
+              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+            >
+              We prioritize real connections. Our user verification process
+              ensures that the people you meet are who they say they are, so you
+              can feel safe while engaging with others.
+            </p>
+          </span>
+          <span
+            class="bg-white rounded-full text-center w-full aspect-square z-30"
+          >
+            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+              3. Security & Privacy
+            </h5>
+            <p
+              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+            >
+              Your security is our top priority. Huntgame uses the latest
+              encryption and privacy measures to ensure that your personal
+              information stays safe.
+            </p>
+          </span>
+        </span>
+      </div>
+    </section>
+    <div class="flex flex-col-reverse lg:flex-col">
+      <Testimonials />
+      <section
+        class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-40 xl:px-40"
+      >
+        <div
+          class="bg-white/95 rounded-[20px] py-14 px-10 lg:py-24 lg:px-16 flex flex-col gap-7 md:flex-row w-full"
+        >
+          <div
+            class="bg-white flex-1 py-12 px-8 text-center rounded-[20px] lg:px-16 lg:flex lg:flex-col lg:justify-center xl:px-24 min-w-0 lg:pb-[101px] lg:pt-[90px]"
+          >
+            <h5 class="text-xl font-extrabold text-primaryBg mb-2 lg:text-4xl">
+              JOIN HUNTGAME
+            </h5>
+            <p class="text-black mb-14 lg:text-2xl">
+              Join a premium community of users seeking love and companionship.
+            </p>
+            <button
+              class="w-full rounded-[50px] text-white bg-primaryBg h-14 lg:h-20 relative"
+              id="getStarted">Get started</button
+            >
           </div>
-          <div class="bg-white rounded-[10px] lg:w-full">
-            <Image
-              alt="happy couples"
-              src={testimonial2}
-              class="rounded-t-[10px] w-56 h-52 lg:w-full lg:h-auto"
-            />
-            <div class="px-5 py-6 w-56 lg:w-full lg:h-36">
-              <p class="text-black">
-                Huntgame was an easy place to meet and find genuine connections.
-              </p>
+          <img
+            alt="hunt game app on phone"
+            src="/phonemobile.png"
+            class="mx-auto flex-1 lg:hidden w-full h-auto min-w-0 grow rounded-[20px] scale-125"
+          />
+          <img
+            alt="hunt game app on phone"
+            src="/huntgame-app-desk.png"
+            class="mx-auto flex-1 hidden lg:block w-full h-auto min-w-0 grow rounded-[20px]"
+          />
+          <div
+            class="relative z-10 hidden"
+            aria-labelledby="modal-title"
+            role="dialog"
+            aria-modal="true"
+            id="appDialog"
+          >
+            <div
+              class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+              aria-hidden="true"
+            >
             </div>
-          </div>
-          <div class="bg-white rounded-[10px] lg:w-full">
-            <Image
-              alt="happy couples"
-              src={testimonial3}
-              class="rounded-t-[10px] w-56 h-52 lg:w-full lg:h-auto"
-            />
-            <div class="px-5 py-6 w-56 lg:w-full lg:h-36">
-              <p class="text-black">
-                Huntgame is a good community, finding love was easy.
-              </p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[10px] lg:w-full">
-            <Image
-              alt="happy couples"
-              src={testimonial4}
-              class="rounded-t-[10px] w-56 h-52 lg:w-full lg:h-auto"
-            />
-            <div class="px-5 py-6 w-56 lg:w-full lg:h-36">
-              <p class="text-black">
-                We met at huntgame and the rest is history, all thanks to
-                huntgame show.
-              </p>
+            <div class="fixed inset-0 z-50 w-screen overflow-y-auto">
+              <div
+                class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+              >
+                <div
+                  class="relative transform flex gap-1 w-[80%] flex-col justify-center items-center pt-10 pb-8 overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+                >
+                  <p class="text-primaryBg text-2xl font-extrabold">
+                    JOIN HUNTGAME
+                  </p>
+                  <p class="text-black">Download the huntgame app today.</p>
+                  <div class="flex gap-4 mx-6 mt-5 lg:mx-9">
+                    <a href="">
+                      <Image
+                        src={playStore}
+                        alt="link to our app on play store"
+                        class="hover:border-2 border-primaryBg rounded"
+                      />
+                    </a>
+                    <a
+                      href="https://apps.apple.com/ng/app/huntgame/id6502562121"
+                      target="_blank"
+                    >
+                      <Image
+                        src={appStore}
+                        alt="link to our app on app store"
+                        class="hover:border-2 border-primaryBg rounded"
+                      />
+                    </a>
+                  </div>
+                  <button
+                    class="top-1 right-4 text-black absolute text-2xl"
+                    id="closeDialog">X</button
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>

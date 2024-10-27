@@ -9,6 +9,7 @@ export default {
       colors: {
         primaryBg: "var(--primary-bg-color)",
         secondaryBg: "var(--secondary-bg-color)",
+        secondaryColor: "hsl(var(--secondary-color))",
         // primaryText: "var(--primary-text-color)",
         // secondaryBg2: "var(--secondary-bg-color-2)",
         // primaryCta: "var(--primary-cta-color)",

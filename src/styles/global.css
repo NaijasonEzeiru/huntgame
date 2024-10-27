@@ -6,10 +6,9 @@
   :root {
     --primary-bg-color: #6f084c;
     --secondary-bg-color: #820b5a66;
-    /* --gold-color: #e2b355;
-    --primary-text-color: #000;
-    --secondary-bg-color-2: #ebedf7;
-    --primary-cta-color: #00043c; */
+    --secondary-color: 320deg 84% 28%;
+    /* #C06E83 */
+    /* B5170C */
   }
 }
 
@@ -37,4 +36,12 @@
 
 .gar {
   grid-auto-rows: 1fr;
+}
+
+.text-stroke-6 {
+  -webkit-text-stroke: 4px #b5170c;
+}
+
+.text-stroke-3 {
+  -webkit-text-stroke: 2px #7f0202;
 }

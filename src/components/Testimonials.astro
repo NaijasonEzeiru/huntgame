@@ -1,0 +1,35 @@
+---
+import testimonial1 from "../assets/testimonial_1.png";
+import testimonial2 from "../assets/testimonial_2.png";
+import testimonial3 from "../assets/testimonial_3.png";
+import testimonial4 from "../assets/testimonial_4.png";
+import TestimonialCard from "./TestimonialCard.astro";
+---
+
+<section
+  class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-40 xl:px-40"
+>
+  <h3
+    class="font-extrabold text-center pt-14 mb-[22px] lg:pt-28 lg:mb-8 lg:text-xl"
+  >
+    TESTIMONIALS
+  </h3>
+  <div class="flex gap-6 overflow-x-auto justify-between">
+    <TestimonialCard
+      cardImage={testimonial1}
+      content="We cannot tell our love story without mentioning huntgame."
+    />
+    <TestimonialCard
+      cardImage={testimonial2}
+      content="Huntgame was an easy place to meet and find genuine connection."
+    />
+    <TestimonialCard
+      cardImage={testimonial3}
+      content="Huntgame is a good community, finding love was easy."
+    />
+    <TestimonialCard
+      cardImage={testimonial4}
+      content="We met at huntgame and the rest is history, all thanks to huntgame show."
+    />
+  </div>
+</section>
