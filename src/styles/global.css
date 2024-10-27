@@ -42,6 +42,14 @@
   -webkit-text-stroke: 4px #b5170c;
 }
 
+.text-stroke-5 {
+  -webkit-text-stroke: 2px #b5170c;
+}
+
 .text-stroke-3 {
   -webkit-text-stroke: 2px #7f0202;
 }
+
+/* * {
+  outline: 1px red solid;
+} */

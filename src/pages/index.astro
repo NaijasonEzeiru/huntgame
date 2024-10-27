@@ -23,34 +23,34 @@ import Testimonials from "../components/Testimonials.astro";
         FEATURED PRODUCTS
       </h3>
       <div
-        class="lg:flex flex-col gap-48 lg:flex-row justify-between items-center hidden"
+        class="xl:flex flex-col gap-48 xl:gap-20 xl:flex-row justify-between items-center hidden"
       >
         <div
-          class="relative flex-1 flex flex-col-reverse items-center max-w-80 lg:max-w-none lg:items-stretch"
+          class="relative flex-1 flex flex-col-reverse items-center max-w-80 xl:max-w-none xl:items-stretch"
         >
           <div
-            class="rounded-full w-full lg:w-[275px] h-[275px] border-[10px] aspect-square border-[#B5170C] lg:absolute z-10 top-36 lg:-top-[12%]"
+            class="rounded-full w-full xl:w-[275px] h-[275px] border-[10px] aspect-square border-[#B5170C] xl:absolute z-10 top-36 xl:-top-[12%]"
           >
             <img
               alt="happy couples"
-              src="match-making.png"
+              src="match_making.png"
               class="w-full h-full rounded-full block"
             />
           </div>
           <div
             class="bg-[#D9D9D9] h-[216px] pl-44 flex justify-center flex-col rounded-lg w-[85%] pr-8 relative left-32"
           >
-            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+            <h5 class="text-primaryBg font-extrabold text-lg xl:text-2xl">
               Premium match making
             </h5>
-            <p class="text-black lg:text-xl">
+            <p class="text-black xl:text-xl">
               Get matched with people of similar qualities and thoughts.
             </p>
           </div>
         </div>
         <div class="relative flex-1 flex flex-col-reverse">
           <div
-            class="rounded-full w-[275px] h-[275px] border-[10px] border-[#B5170C] lg:absolute z-10 -top-[12%]"
+            class="rounded-full w-[275px] h-[275px] border-[10px] border-[#B5170C] xl:absolute z-10 -top-[12%]"
           >
             <img
               alt="happy couples"
@@ -61,17 +61,17 @@ import Testimonials from "../components/Testimonials.astro";
           <div
             class="bg-[#D9D9D9] h-[216px] pl-44 flex justify-center flex-col rounded-lg w-[85%] pr-8 relative left-32"
           >
-            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+            <h5 class="text-primaryBg font-extrabold text-lg xl:text-2xl">
               A community of like minds
             </h5>
-            <p class="text-black lg:text-xl">
+            <p class="text-black xl:text-xl">
               Join a premium community of users seeking love and companionship.
             </p>
           </div>
         </div>
       </div>
       <div
-        class="flex flex-col gap-48 mb-24 lg:flex-row lg:gap-44 justify-between items-center lg:hidden"
+        class="flex flex-col gap-48 mb-24 xl:flex-row xl:gap-44 justify-between items-center xl:hidden"
       >
         <div
           class="relative flex-1 flex flex-col-reverse items-center max-w-80"
@@ -88,10 +88,10 @@ import Testimonials from "../components/Testimonials.astro";
           <div
             class="bg-[#D9D9D9] flex gap-4 px-5 pt-4 flex-col rounded-2xl w-11/12 h-80"
           >
-            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+            <h5 class="text-primaryBg font-extrabold text-lg xl:text-2xl">
               A community of like minds
             </h5>
-            <p class="text-black lg:text-xl">
+            <p class="text-black xl:text-xl">
               Join a premium community of users seeking love and companionship.
             </p>
           </div>
@@ -111,10 +111,10 @@ import Testimonials from "../components/Testimonials.astro";
           <div
             class="bg-[#D9D9D9] flex gap-4 px-5 pt-4 flex-col rounded-2xl w-11/12 h-80"
           >
-            <h5 class="text-primaryBg font-extrabold text-lg lg:text-2xl">
+            <h5 class="text-primaryBg font-extrabold text-lg xl:text-2xl">
               Premium match making
             </h5>
-            <p class="text-black lg:text-xl">
+            <p class="text-black xl:text-xl">
               Get matched with people of similar qualities and thoughts.
             </p>
           </div>
@@ -125,7 +125,7 @@ import Testimonials from "../components/Testimonials.astro";
       class="relative w-full bg-primaryBg pb-7 lg:pb-40 px-7 sm:px-16 lg:px-20 xl:px-20 pt-12"
     >
       <div
-        class="bg-white/5 relative px-14 after:absolute after:z-0 after:w-full after:bg-[#D6792C] after:content-[''] after:h-[45%] after:rounded-b-full after:top-0 after:right-0 lg:after:w-[45%] lg:after:h-full lg:after:rounded-l-full lg:after:rounded-br-none"
+        class="bg-white/5 max-w-[600px] mx-auto lg:max-w-none relative px-14 after:absolute after:z-0 after:w-full after:bg-[#D6792C] after:content-[''] after:h-[45%] after:rounded-b-full after:top-0 after:right-0 lg:after:w-[45%] lg:after:h-full lg:after:rounded-l-full lg:after:rounded-br-none"
       >
         <h3
           class="pb-14 pt-6 lg:py-20 font-semibold text-lg lg:text-3xl lg:mx-8 z-20 relative text-center lg:text-left"
@@ -136,46 +136,54 @@ import Testimonials from "../components/Testimonials.astro";
           class="flex flex-col lg:flex-row text-primaryBg gap-5 lg:gap-7 lg:mx-8 font-extrabold pb-3 lg:pb-44 z-20"
         >
           <span
-            class="bg-white rounded-full text-center w-full aspect-square z-20"
+            class="bg-white rounded-full text-center w-full aspect-square z-20 flex justify-between flex-col lg:justify-start"
           >
-            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+            <h5
+              class="sm:text-xl md:text-[1.75rem] pt-12 md:pt-16 px-5 xl:px-14"
+            >
               1. Tailored Matches
             </h5>
             <p
-              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+              class="text-sm mt-2 sm:text-lg md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:pt-7 pb-16"
             >
               Our advanced matching algorithm ensures that you are paired with
               people who share your interests, values, and goals, making it
               easier to build lasting connections.
             </p>
+            <div class="h-1/5 lg:hidden"></div>
           </span>
           <span
-            class="bg-white rounded-full text-center w-full aspect-square z-20"
+            class="bg-white rounded-full text-center w-full aspect-square z-20 flex justify-between flex-col lg:justify-start"
           >
-            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+            <h5
+              class="sm:text-xl md:text-[1.75rem] pt-12 md:pt-16 px-5 xl:px-14"
+            >
               2. Relationship Focused
             </h5>
             <p
-              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+              class="text-sm mt-2 sm:text-lg md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:pt-7 pb-16"
             >
               We prioritize real connections. Our user verification process
               ensures that the people you meet are who they say they are, so you
               can feel safe while engaging with others.
             </p>
+            <div class="h-1/5 lg:hidden"></div>
           </span>
           <span
-            class="bg-white rounded-full text-center w-full aspect-square z-30"
+            class="bg-white rounded-full text-center w-full aspect-square z-20 flex justify-between flex-col lg:justify-start"
           >
-            <h5 class="md:text-[1.75rem] pt-12 md:pt-16">
+            <h5
+              class="sm:text-xl md:text-[1.75rem] pt-12 md:pt-16 px-5 xl:px-14"
+            >
               3. Security & Privacy
             </h5>
             <p
-              class="text-sm mt-2 md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:py-7"
+              class="text-sm mt-2 sm:text-lg md:text-2xl md:mt-6 rounded-full text-center px-4 md:px-7 md:pt-7 pb-16"
             >
               Your security is our top priority. Huntgame uses the latest
               encryption and privacy measures to ensure that your personal
               information stays safe.
-            </p>
+            </p><div class="h-1/5 lg:hidden"></div>
           </span>
         </span>
       </div>

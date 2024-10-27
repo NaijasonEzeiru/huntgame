@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import huntgameShow from "../assets/huntgame-show.png";
-import huntgameApp from "../assets/huntgame-app.png";
+import huntgameShow from "../assets/huntgame_show.png";
+import huntgameApp from "../assets/download_huntgame.png";
 ---
 
 <section
-  class="pt-9 lg:pt-24 bg-primaryBg pb-16 lg:pb-40 px-7 md:px-20 lg:px-44 xl:px-56"
+  class="pt-12 lg:pt-24 bg-primaryBg pb-16 lg:pb-40 px-9 md:px-20 lg:px-44 xl:px-56"
 >
   <h3
     class="text-lg font-medium lg:text-3xl lg:font-semibold mb-3 lg:mb-12 text-center"
@@ -35,12 +35,8 @@ import huntgameApp from "../assets/huntgame-app.png";
       </p>
     </div>
     <div class="flex-1">
-      <Image src={huntgameApp} alt="" class="w-full md:hidden" />
-      <img
-        src="/huntgame_app.png"
-        alt=""
-        class="w-full hidden md:block rounded-[50px]"
-      />
+      <!-- <Image src={huntgameApp} alt="" class="w-full md:hidden" /> -->
+      <img src="/huntgame_app.png" alt="" class="w-full md:rounded-[50px]" />
       <h4 class="text-lg lg:text-2xl font-semibold mb-1 mt-2 lg:mt-4 lg:mb-3">
         Huntgame app
       </h4>

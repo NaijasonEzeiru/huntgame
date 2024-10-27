@@ -25,13 +25,14 @@ const { title, content } = Astro.props;
     <meta name="description" {content} />
   </head>
 
-  <body class="bg-white text-black">
+  <body class="bg-white text-black overflow-x-hidden">
     <header
       transition:persist
       transition:name="header"
       id="head"
-      class="flex h-20 justify-between bg-[#C06E83] md:bg-primaryBg text-white items-center px-9 lg:px-[186px] relative z-40 after:absolute after:z-50 after:w-full after:h-full after:bg-secondaryColor/10 after:content-['']"
+      class="flex h-20 justify-between bg-primaryBg text-white items-center px-9 lg:px-[186px] relative z-40"
     >
+      <!-- after:absolute after:z-50 after:w-[100vw] after:h-full after:bg-secondaryColor/10 after:left-0 after:content-[''] md:after:hidden -->
       <a href="/" class="flex gap-2 items-center text-lg font-bold">
         <Image
           src={logo}
