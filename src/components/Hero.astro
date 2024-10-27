@@ -18,12 +18,14 @@ import appStore from "../assets/app-store.png";
     <img src="/hero.png" alt="" class="md:w-[45%]" />
     <div class="md:pt-16">
       <p
-        class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10 text-stroke-5"
+        class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10"
+        id="myoutlinedtext"
       >
         Huntgame - where we help two strangers find love.
       </p>
       <p
         class="text-sm md:text-xl px-4 lg:text-3xl font-semibold mb-10 text-center"
+        id="myoutlined"
       >
         Find your spark, relationship, dating, whatever you seek, Huntgame
         community is here to provide. download app today. happy hunting!
@@ -41,4 +43,48 @@ import appStore from "../assets/app-store.png";
       </span>
     </div>
   </div>
+  <script is:inline>
+    const x = window.matchMedia("(max-width: 700px)");
+    const color = "#b5170c"; /* white outline */
+    let l = 3;
+    let r = 6; /* width of outline in pixels */
+    if (x.matches) {
+      // If media query matches
+      r = 4;
+      l = 1;
+    }
+    const n = Math.ceil(2 * Math.PI * r); /* number of shadows */
+    var str = "";
+    var st = "";
+    for (
+      var i = 0;
+      i < n;
+      i++ /* append shadows in n evenly distributed directions */
+    ) {
+      const theta = (2 * Math.PI * i) / n;
+      str +=
+        r * Math.cos(theta) +
+        "px " +
+        r * Math.sin(theta) +
+        "px 0 " +
+        color +
+        (i == n - 1 ? "" : ",");
+    }
+    for (
+      var i = 0;
+      i < n;
+      i++ /* append shadows in n evenly distributed directions */
+    ) {
+      const theta = (2 * Math.PI * i) / n;
+      st +=
+        l * Math.cos(theta) +
+        "px " +
+        l * Math.sin(theta) +
+        "px 0 " +
+        color +
+        (i == n - 1 ? "" : ",");
+    }
+    document.querySelector("#myoutlinedtext").style.textShadow = str;
+    document.querySelector("#myoutlined").style.textShadow = st;
+  </script>
 </div>
