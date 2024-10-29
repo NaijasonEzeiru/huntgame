@@ -1,11 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import playStore from "../assets/play-store.png";
+import playStoreMobile from "../assets/playstore_mobile.png";
 import appStore from "../assets/app-store.png";
+import appStoreMobile from "../assets/appstore_mobile.png";
 ---
 
 <div
-  class="w-full relative text-white inter before:absolute before:-z-20 before:w-full before:h-full before:bg-[#C06E83] before:content-[''] after:absolute after:z-30 after:w-full after:h-full after:bg-secondaryColor/10 after:content-[''] after:top-0"
+  class="w-full relative text-white inter before:absolute before:-z-20 before:w-full before:h-full before:bg-[#C06E83] before:content-[''] after:absolute after:z-10 after:w-full after:h-full after:bg-secondaryColor/10 after:content-[''] after:top-0"
 >
   <!-- <Image
     src={hero}
@@ -13,15 +15,15 @@ import appStore from "../assets/app-store.png";
     class="relative md:min-h-[calc(100vh-7rem)] -z-30 md:mx-auto"
   /> -->
   <div
-    class="px-14 md:pl-24 md:pr-[186px] pt-4 h-fit top-0 my-auto bottom-0 flex flex-col-reverse md:flex-row mb-0"
+    class="px-14 md:pl-24 md:pr-[186px] pt-14 h-fit top-0 my-auto bottom-0 flex flex-col-reverse md:flex-row mb-0"
   >
     <img src="/hero.png" alt="" class="md:w-[45%]" />
-    <div class="md:pt-16">
+    <div class="pt-4 md:pt-16">
       <p
         class="text-3xl md:text-4xl lg:text-[4.375rem] font-black lg:leading-tight text-center mb-10"
         id="myoutlinedtext"
       >
-        Huntgame - where we help two strangers find love.
+        Welcome to Huntgame, where we help two strangers find love
       </p>
       <p
         class="text-sm md:text-xl px-4 lg:text-3xl font-semibold mb-10 text-center"
@@ -30,15 +32,39 @@ import appStore from "../assets/app-store.png";
         Find your spark, relationship, dating, whatever you seek, Huntgame
         community is here to provide. download app today. happy hunting!
       </p>
-      <span class="flex gap-3 justify-center items-center px-4 pb-16">
-        <a class="max-w-72" href="" target="_blank">
-          <Image src={playStore} alt="link to hunt game app on play store" />
+      <span
+        class="flex gap-3 justify-center items-center px-4 pb-16 z-20 relative"
+      >
+        <a
+          class="max-w-72"
+          href="https://apkpure.com/group/thenewhuntersapp.huntersapp.hunt"
+          target="_blank"
+        >
+          <Image
+            src={playStore}
+            alt="link to hunt game app on play store"
+            class="hidden lg:block"
+          />
+          <Image
+            src={playStoreMobile}
+            alt="link to hunt game app on play store"
+            class="lg:hidden"
+          />
         </a>
         <a
           class="max-w-72"
           href="https://apps.apple.com/ng/app/huntgame/id6502562121"
           target="_blank"
-          ><Image src={appStore} alt="link to hunt game app on app store" /></a
+          ><Image
+            src={appStore}
+            alt="link to hunt game app on app store"
+            class="hidden lg:block"
+          />
+          <Image
+            src={appStoreMobile}
+            alt="link to hunt game app on app store"
+            class="lg:hidden"
+          /></a
         >
       </span>
     </div>

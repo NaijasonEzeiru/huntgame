@@ -8,9 +8,11 @@ import appStore from "../assets/app-store.png";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import Testimonials from "../components/Testimonials.astro";
+import IndexHeader from "../components/IndexHeader.astro";
 ---
 
 <Layout title="Huntgame" content="Huntgame">
+  <IndexHeader />
   <main class="text-white overflow-hidden">
     <Hero />
     <Community />
@@ -18,9 +20,7 @@ import Testimonials from "../components/Testimonials.astro";
       <section
         class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-20 lg:px-20 xl:px-20"
       >
-        <h3
-          class="font-extrabold text-center pt-14 pb-[22px] lg:pt-[72px] lg:pb-12 lg:text-xl"
-        >
+        <h3 class="font-extrabold text-center pb-[22px] lg:pb-12 lg:text-xl">
           FEATURED PRODUCTS
         </h3>
         <div
@@ -125,7 +125,7 @@ import Testimonials from "../components/Testimonials.astro";
         </div>
       </section>
       <section
-        class="relative w-full bg-primaryBg pb-7 lg:pb-40 px-7 sm:px-16 lg:px-20 xl:px-20 pt-12"
+        class="relative w-full bg-primaryBg pb-10 lg:pb-32 px-7 sm:px-16 lg:px-20 xl:px-20 pt-12"
       >
         <div
           class="bg-white/5 max-w-[600px] mx-auto lg:max-w-none relative px-14 after:absolute after:z-0 after:w-full after:bg-[#D6792C] after:content-[''] after:h-[45%] after:rounded-b-full after:top-0 after:right-0 lg:after:w-[45%] lg:after:h-full lg:after:rounded-l-full lg:after:rounded-br-none"
@@ -194,7 +194,7 @@ import Testimonials from "../components/Testimonials.astro";
       <div class="flex flex-col-reverse lg:flex-col">
         <Testimonials />
         <section
-          class="bg-primaryBg pb-16 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-40 xl:px-40"
+          class="bg-primaryBg pb-11 lg:pb-40 px-7 sm:px-16 md:px-32 lg:px-40 xl:px-40"
         >
           <div
             class="bg-white/95 rounded-[20px] py-14 px-10 lg:py-24 lg:px-16 flex flex-col gap-7 md:flex-row w-full"
@@ -219,7 +219,7 @@ import Testimonials from "../components/Testimonials.astro";
             <img
               alt="hunt game app on phone"
               src="/phonemobile.png"
-              class="mx-auto flex-1 lg:hidden w-full h-auto min-w-0 grow rounded-[20px] scale-125"
+              class="mx-auto flex-1 px-14 mb-14 mt-20 lg:hidden w-full h-auto min-w-0 grow rounded-[20px] scale-125"
             />
             <img
               alt="hunt game app on phone"
@@ -250,7 +250,10 @@ import Testimonials from "../components/Testimonials.astro";
                     </p>
                     <p class="text-black">Download the huntgame app today.</p>
                     <div class="flex gap-4 mx-6 mt-5 lg:mx-9">
-                      <a href="">
+                      <a
+                        href="https://apkpure.com/group/thenewhuntersapp.huntersapp.hunt"
+                        target="_blank"
+                      >
                         <Image
                           src={playStore}
                           alt="link to our app on play store"
