@@ -1,5 +1,5 @@
 ---
-import { slide, ViewTransitions } from "astro:transitions";
+// import { slide, ViewTransitions } from "astro:transitions";
 import "@fontsource/slackey";
 import "@fontsource/roboto";
 import "@fontsource/righteous";
@@ -19,14 +19,11 @@ const { title, content } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="icon.png" />
     <title>{title}</title>
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
     <meta name="description" {content} />
   </head>
 
   <body class="bg-white text-black overflow-x-hidden">
-    <slot
-      transition:animate={slide({ duration: "0.4s" })}
-      transition:name="main"
-    />
+    <slot />
   </body>
 </html>
